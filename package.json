@@ -2,6 +2,10 @@
   "name": "strong_password",
   "version": "0.1.0",
   "private": true,
+<<<<<<< Updated upstream
+=======
+  "homepage": "https://MaryMisMaria.github.io/CheckPassword",
+>>>>>>> Stashed changes
   "dependencies": {
     "@mui/icons-material": "^6.1.8",
     "@mui/material": "^6.1.8",

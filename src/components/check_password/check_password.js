@@ -57,7 +57,7 @@ const PasswordStrengthChecker = () => {
 			case 'weak':
 				return ['red', 'gray', 'gray'];
 			case 'medium':
-				return ['#ffcc00', '#ffcc00', 'gray'];
+				return ['#D46B2B', '#D46B2B', 'gray'];
 			case 'strong':
 				return ['green', 'green', 'green'];
 			default:
@@ -127,49 +127,39 @@ const PasswordStrengthChecker = () => {
 						</p>
 					</div>
 				)}
-			{/* eslint-disable-next-line react/react-in-jsx-scope */}
 			<div className='strength-indicators'>
-				{/* eslint-disable-next-line react/react-in-jsx-scope */}
 				<div
 					className='strength-indicator'
 					style={{ backgroundColor: colors[0] }}
 				/>
-				{/* eslint-disable-next-line react/react-in-jsx-scope */}
 				<div
 					className='strength-indicator'
 					style={{ backgroundColor: colors[1] }}
 				/>
-				{/* eslint-disable-next-line react/react-in-jsx-scope */}
 				<div
 					className='strength-indicator'
 					style={{ backgroundColor: colors[2] }}
 				/>
 			</div>
-			{/* eslint-disable-next-line react/react-in-jsx-scope */}
 			<div className='password-strength-message'>
 				{
 					R.equals(strength, 'empty') &&
-					// eslint-disable-next-line react/react-in-jsx-scope
 					<span>Enter a password to check its strength. Please use English.</span>
 				}
 				{
 					R.equals(strength, 'short') &&
-					// eslint-disable-next-line react/react-in-jsx-scope
 					<span className='warning-message'>Password is too short. Minimum 8 characters required.</span>
 				}
 				{
 					R.equals(strength, 'weak') &&
-					// eslint-disable-next-line react/react-in-jsx-scope
 					<span className='warning-message'>Weak password. Add more variety of characters.</span>
 				}
 				{
 					R.equals(strength, 'medium') &&
-					// eslint-disable-next-line react/react-in-jsx-scope
 					<span className='medium-message'>Medium password. Consider using more special characters.</span>
 				}
 				{
 					R.equals(strength, 'strong') &&
-					// eslint-disable-next-line react/react-in-jsx-scope
 					<span className='success-message'>Strong password. Great job!</span>
 				}
 			</div>
